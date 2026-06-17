@@ -1,0 +1,67 @@
+version: "3.9"
+
+networks:
+  eazybytes:
+    driver: bridge
+
+services:
+  accounts:
+    image: suthar422/accounts:s4   # replace with your actual image
+    container_name: accounts-ms
+    ports:
+      - "8090:8090"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/sportcenter
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: password
+#    depends_on:
+#      - mysql
+    networks:
+      - eazybytes
+
+  loan:
+    image: suthar422/loan:s4   # replace with your actual image
+    container_name: loan-ms
+    ports:
+      - "8091:8091"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/sportcenter
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: password
+#    depends_on:
+#      - mysql
+    networks:
+      - eazybytes
+
+  cards:
+    image: suthar422/cards:s4 # replace with your actual image
+    container_name: cards-ms
+    ports:
+      - "8092:8092"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/sportcenter
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: password
+#    depends_on:
+#      - mysql
+    networks:
+      - eazybytes
+
+#  mysql:
+#    image: mysql:8.0
+#    container_name: sportcenter-mysql
+#    ports:
+#      - "3306:3306"
+#    environment:
+#      MYSQL_ROOT_PASSWORD: password
+#      MYSQL_DATABASE: sportcenter
+#      MYSQL_USER: user
+#      MYSQL_PASSWORD: root
+#    volumes:
+#      - mysql-data:/var/lib/mysql
+#      - ./data.sql:/docker-entrypoint-initdb.d/data.sql
+#    networks:
+#      - eazybytes
+
+volumes:
+  mysql-data:
