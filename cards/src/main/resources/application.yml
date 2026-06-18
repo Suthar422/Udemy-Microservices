@@ -17,3 +17,15 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to My Cards related APIs"
+  contactDetails:
+    name: "PK - Owner"
+    email: "pk@bank.com"
+  onCallSupport:
+    -(111)111-1234
+    -(111)111-1345

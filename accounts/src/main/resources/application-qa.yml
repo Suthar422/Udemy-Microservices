@@ -6,8 +6,8 @@ spring:
 build:
   version: "2.0"
 
-loans:
-  message: "Welcome to My Loans related QA APIs"
+accounts:
+  message: "Welcome to My accounts related QA APIs"
   contactDetails:
     name: "DK - TestLead"
     email: "dk@bank.com"

@@ -6,8 +6,8 @@ spring:
 build:
   version: "1.0"
 
-loans:
-  message: "Welcome to My Loans related prod APIs"
+accounts:
+  message: "Welcome to My accounts related prod APIs"
   contactDetails:
     name: "PK - Owner"
     email: "pk@bank.com"
