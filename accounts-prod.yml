@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to EazyBank accounts related prod APIs "
+  message: "Welcome to EazyBank accounts related prod APIs Adding Refresh Scope"
   contactDetails:
     name: "Jagdish Aishwarya - Product Owner"
     email: "aishwarya@jagdish.com"
