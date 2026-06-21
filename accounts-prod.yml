@@ -4,7 +4,7 @@ build:
 accounts:
   message: "Welcome to EazyBank accounts related prod APIs Adding Refresh Scope"
   contactDetails:
-    name: "Jagdish Aishwarya - Product Owner Scope added"
+    name: "Jagdish Aishwarya - Product Owner"
     email: "aishwarya@jagdish.com"
   onCallSupport:
     - (453) 392-4829
